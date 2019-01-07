@@ -12,6 +12,6 @@ def upload(request):
     if request.method == 'POST':
         uploaded_file = request.FILES['document']
         fs = FileSystemStorage()
-        fs.save(uploaded_file.name, uploaded_file)
+        fs.save("programmedata.xml", uploaded_file)
         return render(request, 'moodslider/index.html')
     return render(request, 'moodslider/upload.html')
