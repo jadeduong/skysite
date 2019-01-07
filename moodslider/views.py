@@ -9,6 +9,5 @@ def index(request):
 def upload(request):
     if request.method == 'POST':
         uploaded_file = request.FILES['document']
-        print(uploaded_file.name)
-        print(uploaded_file.size)
+        return render(request, 'moodslider/index.html')
     return render(request, 'moodslider/upload.html')
