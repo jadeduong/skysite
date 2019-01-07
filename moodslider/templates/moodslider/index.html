@@ -6,6 +6,62 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'moodslider/indexstyle.css' %}">
+    <script type="text/javascript" language="javascript">
+
+    function updateMood(sliderID, val) {;
+        if (sliderID=="slider1")
+            if (val<50) {
+                mood = "agitated";
+            }
+            else if (val>50) {
+                mood = "calm";
+            }
+            else {
+                mood = "neutral";
+            }
+        else if (sliderID=="slider2")
+            if (val<50) {
+                mood = "happy";
+            }
+            else if (val>50) {
+                mood = "sad";
+            }
+            else {
+                mood = "neutral";
+            }
+        else if (sliderID=="slider3")
+            if (val<50) {
+                mood = "tired";
+            }
+            else if (val>50) {
+                mood = "wide awake";
+            }
+            else {
+                mood = "neutral";
+            }
+        else if (sliderID=="slider4")
+            if (val<50) {
+                mood = "scared";
+            }
+            else if (val>50) {
+                mood = "fearless";
+            }
+            else {
+                mood = "neutral";
+            }
+        document.getElementById('output').value=mood;
+        displayProgrammes(mood);
+    }
+
+    function displayProgrammes(mood) {
+
+
+    }
+
+
+    </script>
+
+
 </head>
 
 
@@ -24,22 +80,22 @@
         <table class="slidecontainer" align="center">
             <tr>
                 <td>Agitated</td>
-                <td colspan="2"><input type="range" min="1" max="100" value="50" id="myRange" class="slider"></td>
+                <td colspan="2"><input type="range" min="1" max="100" value="50" id="slider1" class="slider" onchange="updateMood(this.id, this.value);"></td>
                 <td>Calm</td>
             </tr>
             <tr>
                 <td>Happy</td>
-                <td colspan="2"><input type="range" min="1" max="100" value="50" id="myRange" class="slider"></td>
+                <td colspan="2"><input type="range" min="1" max="100" value="50" id="slider2" class="slider" onchange="updateMood(this.id, this.value);"></td>
                 <td>Sad</td>
             </tr>
             <tr>
                 <td>Tired</td>
-                <td colspan="2"><input type="range" min="1" max="100" value="50" id="myRange" class="slider"></td>
+                <td colspan="2"><input type="range" min="1" max="100" value="50" id="slider3" class="slider" onchange="updateMood(this.id, this.value);"></td>
                 <td>Wide Awake</td>
             </tr>
             <tr>
                 <td>Scared</td>
-                <td colspan="2"><input type="range" min="1" max="100" value="50" id="myRange" class="slider"></td>
+                <td colspan="2"><input type="range" min="1" max="100" value="50" id="slider4" class="slider" onchange="updateMood(this.id, this.value);"></td>
                 <td>Fearless</td>
             </tr>
             </table>
@@ -59,14 +115,10 @@
         </div>
 
 
-
-
-
-
     </div>
 
 
-
+<input type="text" id="output" value="">
 
 
 </body>
