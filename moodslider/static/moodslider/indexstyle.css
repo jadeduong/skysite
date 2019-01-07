@@ -37,7 +37,6 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
 }
@@ -53,10 +52,10 @@ td {
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 600px; /* Full-width */
-    height: 5px; /* Specified height */
-    background: darkblue; /* Grey background */
-    outline: none; /* Remove outline */
+    width: 600px;
+    height: 5px;
+    background: darkblue;
+    outline: none;
 }
 
 .slider::-webkit-slider-thumb {
@@ -65,7 +64,7 @@ td {
   width: 25px;
   height: 25px;
   background: lightblue;/
-  cursor: pointer; /* Cursor on hover */
+  cursor: pointer;
 }
 
 .card {

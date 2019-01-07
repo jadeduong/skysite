@@ -22,15 +22,16 @@
         </ul>
     <div>
 
+    <div class="upload">
+        <h2> Upload Content </h2>
+        <p> Upload your data file below! </p>
 
-    <h2> Upload Content </h2>
-    <p> Upload your data file about programmes below! </p>
-
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        <input type="file" name="document">
-        <button type="submit"> Upload File </button>
-    </form>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="document">
+            <button type="submit"> Upload File </button>
+        </form>
+    </div>
 
 </body>
 
