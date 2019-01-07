@@ -12,53 +12,48 @@
     function updateMood(sliderID, val) {;
         if (sliderID=="slider1")
             if (val<50) {
-                mood = "agitated";
+                mood = "Agitated";
             }
             else if (val>50) {
-                mood = "calm";
+                mood = "Calm";
             }
             else {
-                mood = "neutral";
+                mood = "Neutral";
             }
         else if (sliderID=="slider2")
             if (val<50) {
-                mood = "happy";
+                mood = "Happy";
             }
             else if (val>50) {
-                mood = "sad";
+                mood = "Sad";
             }
             else {
-                mood = "neutral";
+                mood = "Neutral";
             }
         else if (sliderID=="slider3")
             if (val<50) {
-                mood = "tired";
+                mood = "Tired";
             }
             else if (val>50) {
-                mood = "wide awake";
+                mood = "Wide awake";
             }
             else {
-                mood = "neutral";
+                mood = "Neutral";
             }
         else if (sliderID=="slider4")
             if (val<50) {
-                mood = "scared";
+                mood = "Scared";
             }
             else if (val>50) {
-                mood = "fearless";
+                mood = "Fearless";
             }
             else {
-                mood = "neutral";
+                mood = "Neutral";
             }
-        document.getElementById('output').value=mood;
-        displayProgrammes(mood);
+        document.getElementById('output').innerHTML = mood;
     }
 
-    function displayProgrammes(mood) {
-        xml 
 
-
-    }
     </script>
 
 
@@ -117,8 +112,7 @@
 
     </div>
 
-
-<input type="text" id="output" value="">
+<h4> Mood </h4> <p id="output"> Current Mood </p>
 
 
 </body>
