@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'moodslider/indexstyle.css' %}">
+</head>
+
+
+<body>
+
+    <div class="header">
+        <img src="{% static "moodslider/skylogo.png" %}" alt="Sky Logo" style="height:130px; width:auto; float: left; padding-right:10px;">
+        <h1> Moodslider App </h1>
+        <ul>
+          <li><a href="">Moodslider</a></li>
+          <li><a href="upload">Upload Content</a></li>
+        </ul>
+    <div>
+
+    <div>
+        <table class="slidecontainer" align="center">
+            <tr>
+                <td>Agitated</td>
+                <td colspan="2"><input type="range" min="1" max="100" value="50" id="myRange" class="slider"></td>
+                <td>Calm</td>
+            </tr>
+            <tr>
+                <td>Happy</td>
+                <td colspan="2"><input type="range" min="1" max="100" value="50" id="myRange" class="slider"></td>
+                <td>Sad</td>
+            </tr>
+            <tr>
+                <td>Tired</td>
+                <td colspan="2"><input type="range" min="1" max="100" value="50" id="myRange" class="slider"></td>
+                <td>Wide Awake</td>
+            </tr>
+            <tr>
+                <td>Scared</td>
+                <td colspan="2"><input type="range" min="1" max="100" value="50" id="myRange" class="slider"></td>
+                <td>Fearless</td>
+            </tr>
+            </table>
+        </div>
+
+        <div>
+            <table class="programmes" align="center">
+                <tr>
+                    <td> <div class="card"> <img src="img.png" alt="No Content"> <p> Title </div> </td>
+                    <td> <div class="card"> <img src="img.png" alt="No Content"> <p> Title </div> </td>
+                    <td> <div class="card"> <img src="img.png" alt="No Content"> <p> Title </div> </td>
+                    <td> <div class="card"> <img src="img.png" alt="No Content"> <p> Title </div> </td>
+                    <td> <div class="card"> <img src="img.png" alt="No Content"> <p> Title </div> </td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+
+
+</html>

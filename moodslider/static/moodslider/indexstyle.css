@@ -1,0 +1,73 @@
+.header {
+    padding: 20px;
+}
+
+.header img {
+    height:130px;
+    width:auto;
+    float: left;
+    padding-right:10px;
+}
+
+h1 {
+    color: white;
+    overflow: hidden;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+td {
+    padding: 15px;
+}
+
+.slidecontainer {
+    padding: 30px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 600px; /* Full-width */
+    height: 5px; /* Specified height */
+    background: darkblue; /* Grey background */
+    outline: none; /* Remove outline */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: lightblue;/
+  cursor: pointer; /* Cursor on hover */
+}
+
+.card {
+
+}
